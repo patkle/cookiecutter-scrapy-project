@@ -2,6 +2,10 @@
 
 ## Features
 
+- Configurations for Scrapy Cloud
+- Configurations for Proxy Services:
+    - [Zyte Smart Proxy Manager](https://scrapinghub.com/?rfsn=4170080.0597ad)
+    - [ScraperAPI](https://www.scraperapi.com/?fp_ref=patrick50)
 
 ## Requirements
 
@@ -14,8 +18,10 @@
 |option   |default  |description   | 
 |---|---|---|
 |project_name   |Scrapy Boilerplate   |basically the root folder name   |
-|spider_name   |Scrapy Spider Example   |basically the root folder name   |
-|scrapy_cloud_project_id   |Project ID   |The ID of your project in Scrapy Cloud   |
+|spider_name   |Scrapy Spider Example   |class name of the spider   |
+|proxy_service   |Zyte Smart Proxy Manager   |the proxy service used   |
+|deploy_to_scrapy_cloud   |y   |whether or not the project is to be deployed on scrapy cloud   |
+|host_on_kaggle   |y   |whether or not the dataset is hosted on kaggle.com   |
 
 ## ToDos:
 
@@ -23,12 +29,6 @@
     - Telegram configs & templates
     - Some basic monitors
 - Maybe add Scrapy Poet?
-- Improve the cookiecutter options
-    - Add booleans like
-        - Uses proxies?
-            - If true:
-                - Smart Proxy Manager or ScraperAPI?
-                    - add necessary files & readmes
 
 ## Also,  
 You could [buy me a coffe](https://www.buymeacoffee.com/kleinp) if you wanted to. I'd really appreciate that.  

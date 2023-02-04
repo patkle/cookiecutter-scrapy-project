@@ -1,3 +1,7 @@
 scrapy
-#scrapy_zyte_smartproxy
-#scrapy-scraperapi-middleware
+{%- if cookiecutter.proxy_service == "Zyte Smart Proxy Manager" %}
+scrapy_zyte_smartproxy
+{% endif %}
+{%- if cookiecutter.proxy_service == "ScraperAPI" %}
+scrapy-scraperapi-middleware
+{% endif %}
