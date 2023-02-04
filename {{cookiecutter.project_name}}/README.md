@@ -3,13 +3,11 @@
 
 This project can be hosted on Scrapy Cloud.  
 It uses Zyte Smart Proxy Manager.  
-The dataset can be found [here.](https://www.kaggle.com/datasets/patkle/TODO!!!).  
-A Jupyter Notebook with some EDA on that data can be found [here](https://www.kaggle.com/patkle/TODO!!!).  
+The dataset can be found [here.](https://www.kaggle.com/patkle).  
+A Jupyter Notebook with some EDA on that data can be found [here](https://www.kaggle.com/patkle).  
 
-TODOs:
-- Hosted on [Scrapy Cloud](https://www.zyte.com/scrapy-cloud/)?
+- Hosted on [Scrapy Cloud](https://www.zyte.com/scrapy-cloud/)
 - Uses [Smart Proxy Manager](https://scrapinghub.com/?rfsn=4170080.0597ad) or [ScraperAPI](https://www.scraperapi.com/?fp_ref=patrick50)?
-- requirements.txt?
 
 ## {{cookiecutter.spider_name}}
 
