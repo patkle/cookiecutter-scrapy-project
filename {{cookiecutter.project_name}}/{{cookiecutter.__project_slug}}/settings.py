@@ -1,9 +1,9 @@
 #import os  # only necessary when using a proxy service
 
-BOT_NAME = "{{cookiecutter._project_slug}}"
+BOT_NAME = "{{cookiecutter.__project_slug}}"
 
-SPIDER_MODULES = ["{{cookiecutter._project_slug}}.spiders"]
-NEWSPIDER_MODULE = "{{cookiecutter._project_slug}}.spiders"
+SPIDER_MODULES = ["{{cookiecutter.__project_slug}}.spiders"]
+NEWSPIDER_MODULE = "{{cookiecutter.__project_slug}}.spiders"
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/109.0"
 

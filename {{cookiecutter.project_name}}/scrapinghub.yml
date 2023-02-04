@@ -1,4 +1,4 @@
-project: {{cookiecutter.scrapy_cloud_project_id}}
+project: __scrapy_cloud_project_id__
 stack: scrapy:2.7
 requirements:
   file: requirements_scrapinghub.txt

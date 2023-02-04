@@ -4,7 +4,7 @@ deploy:
 
 .PHONY: test
 test:
-	python3 -m scrapy crawl {{cookiecutter._spider_slug}} -O {{cookiecutter._spider_slug}}.csv -a pages=1
+	python3 -m scrapy crawl {{cookiecutter.__spider_slug}} -O {{cookiecutter.__spider_slug}}.csv -a pages=1
 
 .PHONY: black
 black:

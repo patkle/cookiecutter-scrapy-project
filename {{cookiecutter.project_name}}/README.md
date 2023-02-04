@@ -13,7 +13,7 @@ A Jupyter Notebook with some EDA on that data can be found [here](https://www.ka
 
 The spider can be ran with
 ```zsh
-python3 -m scrapy crawl {{cookiecutter._spider_slug}} -a pages=5 -O {{cookiecutter._spider_slug}}.csv
+python3 -m scrapy crawl {{cookiecutter.__spider_slug}} -a pages=5 -O {{cookiecutter.__spider_slug}}.csv
 ```
 
 ### Arguments
@@ -36,6 +36,5 @@ There's a shortcut in the Makefile, just running `make deploy` will deploy the p
 Don't forget to add the ZYTE_SMARTPROXY_APIKEY setting in your cloud project's settings!
 
 
-## Disclaimer
-I put affiliate links in my READMEs because I really like money.  
+## Disclaimer 
 Also, you could [buy me a coffe](https://www.buymeacoffee.com/kleinp) if you wanted to. I'd really appreciate that.  
