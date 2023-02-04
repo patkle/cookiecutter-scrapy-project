@@ -13,7 +13,7 @@ A Jupyter Notebook with some EDA on that data can be found [here](https://www.ka
 
 The spider can be ran with
 ```zsh
-python3 -m scrapy crawl scrapy_spider_example -a pages=5 -O scrapy_spider_example.csv
+python3 -m scrapy crawl {{cookiecutter._spider_slug}} -a pages=5 -O {{cookiecutter._spider_slug}}.csv
 ```
 
 ### Arguments

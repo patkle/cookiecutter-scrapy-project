@@ -14,9 +14,7 @@
 |option   |default  |description   | 
 |---|---|---|
 |project_name   |Scrapy Boilerplate   |basically the root folder name   |
-|project_slug   |lowercase version of project_name   |placeholder in case I want to add another arg   |
 |spider_name   |Scrapy Spider Example   |basically the root folder name   |
-|spider_slug   |lowercase version of project_name   |placeholder in case I want to add another arg   |
 |scrapy_cloud_project_id   |Project ID   |The ID of your project in Scrapy Cloud   |
 
 ## ToDos:
