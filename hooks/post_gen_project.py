@@ -33,8 +33,25 @@ def delete_scrapy_cloud_specific_files():
     remove_file("requirements_scrapinghub.txt")
 
 
+def set_kaggle_urls():
+    """Obtain Kaggle URLs for Dataset and Notebook from user and write to README.md"""
+    kaggle_dataset_url = input("Kaggle Dataset URL: ")
+    replace_string_in_file(
+        "README.md", 
+        "__kaggle_dataset_url__", 
+        kaggle_dataset_url,
+    )
+    kaggle_notebook_url = input("Kaggle Notebook URL: ")
+    replace_string_in_file(
+        "README.md", 
+        "__kaggle_notebook_url__", 
+        kaggle_notebook_url,
+    )
+
 if "{{ cookiecutter.deploy_to_scrapy_cloud }}".lower() == "y":
     set_scrapy_cloud_project_id()
 else:
     delete_scrapy_cloud_specific_files()
 
+if "{{ cookiecutter.host_on_kaggle }}".lower() == "y":
+    set_kaggle_urls()

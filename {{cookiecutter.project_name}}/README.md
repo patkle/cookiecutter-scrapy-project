@@ -2,8 +2,10 @@
 
 
 It uses Zyte Smart Proxy Manager.  
-The dataset can be found [here.](https://www.kaggle.com/patkle).  
-A Jupyter Notebook with some EDA on that data can be found [here](https://www.kaggle.com/patkle).  
+{% if cookiecutter.host_on_kaggle == "y" -%}
+The dataset can be found [here.](__kaggle_dataset_url__).  
+A Jupyter Notebook with some EDA on that data can be found [here](__kaggle_notebook_url__).  
+{%- endif %}
 {% if cookiecutter.deploy_to_scrapy_cloud == "y" -%}
 This project can be hosted on [Scrapy Cloud](https://www.zyte.com/scrapy-cloud/)
 {%- endif %}

@@ -3,5 +3,6 @@
     "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "spider_name": "Scrapy Spider Example",
     "__spider_slug": "{{ cookiecutter.spider_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "deploy_to_scrapy_cloud": "y"
+    "deploy_to_scrapy_cloud": "y",
+    "host_on_kaggle": "y"
 }
