@@ -1,6 +1,8 @@
+{% if cookiecutter.deploy_to_scrapy_cloud == "y" -%}
 .PHONY: deploy
 deploy:
 	python3 -m shub deploy
+{%- endif %}
 
 .PHONY: test
 test:

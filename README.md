@@ -33,7 +33,6 @@
             - If true:
                 - Smart Proxy Manager or ScraperAPI?
                     - add necessary files & readmes
-        - Hosted on Scrapy Cloud?
 
 ## Also,  
 You could [buy me a coffe](https://www.buymeacoffee.com/kleinp) if you wanted to. I'd really appreciate that.  
