@@ -48,10 +48,12 @@ def set_kaggle_urls():
         kaggle_notebook_url,
     )
 
+
 if "{{ cookiecutter.deploy_to_scrapy_cloud }}".lower() == "y":
     set_scrapy_cloud_project_id()
 else:
     delete_scrapy_cloud_specific_files()
+
 
 if "{{ cookiecutter.host_on_kaggle }}".lower() == "y":
     set_kaggle_urls()
