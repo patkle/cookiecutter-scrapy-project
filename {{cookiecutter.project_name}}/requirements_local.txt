@@ -1,8 +1,12 @@
+python-dotenv
 scrapy
-w3lib
-{%- if cookiecutter.proxy_service == "Zyte Smart Proxy Manager" %}
-scrapy_zyte_smartproxy
-{% endif %}
 {%- if cookiecutter.proxy_service == "ScraperAPI" %}
 scrapy-scraperapi-middleware
 {% endif %}
+{%- if cookiecutter.proxy_service == "Zyte Smart Proxy Manager" %}
+scrapy_zyte_smartproxy
+{% endif %}
+{%- if cookiecutter.use_spidermon == "y" %}
+spidermon
+{% endif %}
+w3lib

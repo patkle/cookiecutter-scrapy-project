@@ -1,4 +1,8 @@
+python-dotenv
 w3lib
 {%- if cookiecutter.proxy_service == "ScraperAPI" %}
 scrapy-scraperapi-middleware
+{% endif %}
+{%- if cookiecutter.use_spidermon == "y" %}
+spidermon
 {% endif %}
