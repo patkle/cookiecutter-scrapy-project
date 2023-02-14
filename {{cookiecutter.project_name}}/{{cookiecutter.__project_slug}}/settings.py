@@ -1,10 +1,11 @@
 {%- if cookiecutter.proxy_service != "None" or cookiecutter.use_spidermon == "y" -%}
 import os
 
-{% endif %}
 from dotenv import load_dotenv
 
 load_dotenv()
+{% endif %}
+
 
 BOT_NAME = "{{cookiecutter.__project_slug}}"
 
