@@ -21,6 +21,7 @@
 |spider_name   |Scrapy Spider Example   |class name of the spider   |
 |proxy_service   |Zyte Smart Proxy Manager   |the proxy service used   |
 |deploy_to_scrapy_cloud   |y   |whether or not the project is to be deployed on scrapy cloud   |
+|use_spidermon   |y   |whether or not spidermon should be used for monitoring (and sending messages via telegram)   |
 |host_on_kaggle   |y   |whether or not the dataset is hosted on kaggle.com   |
 
 ## ToDos:
