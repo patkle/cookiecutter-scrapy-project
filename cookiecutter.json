@@ -5,5 +5,6 @@
     "__spider_slug": "{{ cookiecutter.spider_name.lower().replace(' ', '_').replace('-', '_') }}",
     "proxy_service": ["Zyte Smart Proxy Manager", "ScraperAPI", "None"],
     "deploy_to_scrapy_cloud": "y",
+    "use_spidermon": "y",
     "host_on_kaggle": "y"
 }

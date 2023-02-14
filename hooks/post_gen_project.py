@@ -1,4 +1,5 @@
 import os
+import shutil
 
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
@@ -17,6 +18,10 @@ def remove_file(filepath):
     os.remove(os.path.join(PROJECT_DIRECTORY, filepath))
 
 
+def remove_folder(folder_path):
+    shutil.rmtree(os.path.join(PROJECT_DIRECTORY, folder_path))
+
+
 def set_scrapy_cloud_project_id():
     """Obtain Scrapy Cloud project ID from user and write it to scrapinghub.yml"""
     scrapy_cloud_project_id = input("Scrapy Cloud Project ID: ")
@@ -31,6 +36,12 @@ def delete_scrapy_cloud_specific_files():
     """Deletes files exclusively used by Scrapy Cloud"""
     remove_file("scrapinghub.yml")
     remove_file("requirements_scrapinghub.txt")
+
+
+def delete_spidermon_specific_files():
+    """Deletes files and folders exclusively used by Spidermon"""
+    remove_file("{{cookiecutter.__project_slug}}/monitors.py")
+    remove_folder("{{cookiecutter.__project_slug}}/templates")
 
 
 def set_kaggle_urls():
@@ -57,3 +68,7 @@ else:
 
 if "{{ cookiecutter.host_on_kaggle }}".lower() == "y":
     set_kaggle_urls()
+
+
+if "{{ cookiecutter.use_spidermon }}".lower() != "y":
+    delete_spidermon_specific_files()
