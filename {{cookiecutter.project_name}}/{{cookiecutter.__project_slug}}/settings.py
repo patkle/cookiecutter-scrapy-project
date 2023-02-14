@@ -1,11 +1,14 @@
 {%- if cookiecutter.proxy_service != "None" or cookiecutter.use_spidermon == "y" -%}
+import logging
 import os
 
 from dotenv import load_dotenv
 
-load_dotenv()
+try:
+    load_dotenv()
+except:
+    logging.debug("Could not load .env file")
 {% endif %}
-
 
 BOT_NAME = "{{cookiecutter.__project_slug}}"
 
