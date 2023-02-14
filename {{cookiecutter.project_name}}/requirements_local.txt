@@ -1,4 +1,5 @@
 scrapy
+w3lib
 {%- if cookiecutter.proxy_service == "Zyte Smart Proxy Manager" %}
 scrapy_zyte_smartproxy
 {% endif %}
